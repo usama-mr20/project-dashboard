@@ -5,13 +5,10 @@ import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import Box from "@mui/material/Box";
 import { data } from "../data/data";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import { dateRangeFilterAction } from "../actions/dateRangeFilterAction";
-import {
-  dataRecordsAction,
-  dataRecordsFilteredAction,
-} from "../actions/dataRecordsAction";
+import { dataRecordsAction } from "../actions/dataRecordsAction";
 
 export default function BasicDateRangePicker() {
   const [value, setValue] = React.useState([new Date(), new Date()]);

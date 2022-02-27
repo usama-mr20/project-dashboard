@@ -1,7 +1,6 @@
 import React from "react";
 import { DataGridPro, GridToolbar } from "@mui/x-data-grid-pro";
-import { data } from "../data/data";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 const PDataGrid = () => {
   const columns = [
     { field: "id", headerName: "ID", width: 50, editable: true },
@@ -49,7 +48,6 @@ const PDataGrid = () => {
     },
   ];
 
-  const dispatch = useDispatch();
   const { data } = useSelector((state) => state.data);
 
   return (
